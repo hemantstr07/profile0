@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be Mine?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffede8;
+      margin: 0;
+      padding: 0;
+    }
+    #proposal {
+      background-color: #fff;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease;
+    }
+    h1 {
+      color: #ff1493;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    #heart {
+      font-size: 40px;
+      color: #ff1493;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+    #heart:hover {
+      transform: scale(1.2);
+    }
+    #message {
+      display: none;
+      font-size: 24px;
+      color: #ff1493;
+      margin-top: 20px;
+      animation: fadeIn 1s ease 1s forwards;
+    }
+
+    /* Gradient Background Animation */
+    body {
+      background: linear-gradient(45deg, #ff1493, #ff8c00, #ffd700);
+      background-size: 600% 600%;
+      animation: gradientAnimation 15s ease infinite;
+    }
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="proposal">
+    <h1>Will You Be Mine?</h1>
+    <p>Hey sweet heart &#128157</p>
+    <p>As the stars twinkle in the night sky, I find myself thinking about you.</p>
+    <p>Your presence is like a gentle breeze on a warm summer day, bringing comfort and joy to my heart.</p>
+    <p>The way your eyes light up when you smile makes my world brighter.</p>
+    <p>Every laugh, every conversation, every moment we share is a treasure that I hold dear.</p>
+    <p>In your company, I feel a connection like no other, a love that I've never known before.</p>
+    <p>Today, as I gather the courage to express my feelings, I can't help but ask...</p>
+    <p>Will you be my girlfriend and make me the happiest person alive?</p>
+    <p> if yes then click on heart</p>
+    <p>written by hemant__str</p>
+    <div id="heart" onclick="showMessage()">❤️</div>
+    <div id="message">You've made me the happiest person alive! I love you!</div>
+  </div>
+  <script>
+    function showMessage() {
+      const message = document.getElementById('message');
+      message.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
